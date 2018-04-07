@@ -253,6 +253,9 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
@@ -282,9 +285,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Resources\Bolchie\Scripts\Demo.cs" />
+    <Compile Include="Assets\Resources\Bolchie\Scripts\Toggle.cs" />
     <Compile Include="Assets\Scripts\Defines.cs" />
     <Compile Include="Assets\Scripts\Event\EventNotifySystem.cs" />
     <Compile Include="Assets\Scripts\GameMain.cs" />
+    <Compile Include="Assets\Scripts\Object\Brock.cs" />
+    <Compile Include="Assets\Scripts\Object\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Object\Enemy\EnemyBehaviorTree.cs" />
+    <Compile Include="Assets\Scripts\Object\GeneralObject.cs" />
+    <Compile Include="Assets\Scripts\Object\Item.cs" />
+    <Compile Include="Assets\Scripts\Object\Mario.cs" />
+    <Compile Include="Assets\Scripts\Object\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Object\UseableItem.cs" />
     <Compile Include="Assets\Scripts\Stage\Stage.cs" />
     <Compile Include="Assets\Scripts\Stage\StageManager.cs" />
     <Compile Include="Assets\Scripts\TimeManager.cs" />
@@ -294,6 +307,9 @@
     <Compile Include="Assets\Scripts\UI\UI_Base.cs" />
     <Compile Include="Assets\Scripts\UI\UIExample.cs" />
     <Compile Include="Assets\Scripts\UI\UIManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Resources\Bolchie\Package Information.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
