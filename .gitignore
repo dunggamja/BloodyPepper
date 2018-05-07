@@ -6,3 +6,5 @@ BloodyPepper/Library/
 BloodyPepper/.vs/BloodyPepper/v15/.suo
 BloodyPepper/BloodyPepper.userprefs
 BloodyPepper/BloodyPepper.csproj
+BloodyPepper/BloodyPepper.Editor.csproj
+BloodyPepper/Assets/Libraries.meta

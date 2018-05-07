@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: eda9279b57929694482689d8f6c7988b
-timeCreated: 1525515608
+timeCreated: 1525680211
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,14 +10,14 @@ TextureImporter:
     21300006: boss_3
     21300008: boss_4
     21300010: boss_5
-    21300012: boss_6
-    21300014: boss_7
-    21300016: boss_8
-    21300018: boss_9
-    21300020: boss_10
-    21300022: boss_11
-    21300024: boss_12
-    21300026: boss_13
+    21300012: boss_Idle_00
+    21300014: boss_Idle_01
+    21300016: boss_Idle_02
+    21300018: boss_Idle_03
+    21300020: boss_Idle_04
+    21300022: boss_Idle_05
+    21300024: boss_Idle_06
+    21300026: boss_Idle_07
     21300028: boss_14
     21300030: boss_15
     21300032: boss_16
@@ -26,20 +26,20 @@ TextureImporter:
     21300038: boss_19
     21300040: boss_20
     21300042: boss_21
-    21300044: boss_22
-    21300046: boss_23
-    21300048: boss_24
-    21300050: boss_25
-    21300052: boss_26
-    21300054: boss_27
-    21300056: boss_28
-    21300058: boss_29
-    21300060: boss_30
-    21300062: boss_32
-    21300064: boss_33
-    21300066: boss_34
-    21300068: boss_35
-    21300070: boss_36
+    21300044: boss_Attack_00
+    21300046: boss_Attack_01
+    21300048: boss_Attack_02
+    21300050: boss_Attack_03
+    21300052: boss_Attack_04
+    21300054: boss_Attack_05
+    21300056: boss_Attack_06
+    21300058: boss_Attack_07
+    21300060: boss_Attack_08
+    21300062: boss_Attack_09
+    21300064: boss_Attack_10
+    21300066: boss_Attack_11
+    21300068: boss_Attack_12
+    21300070: boss_Attack_13
     21300072: boss_37
     21300074: boss_38
     21300076: boss_39
@@ -47,20 +47,20 @@ TextureImporter:
     21300080: boss_41
     21300082: boss_42
     21300084: boss_43
-    21300086: boss_44
-    21300088: boss_45
-    21300090: boss_46
-    21300092: boss_47
-    21300094: boss_48
-    21300096: boss_49
-    21300098: boss_50
-    21300100: boss_51
-    21300102: boss_52
-    21300104: boss_53
-    21300106: boss_54
-    21300108: boss_55
-    21300110: boss_56
-    21300112: boss_57
+    21300086: boss_Vomit_00
+    21300088: boss_Vomit_01
+    21300090: boss_Vomit_02
+    21300092: boss_Vomit_03
+    21300094: boss_Vomit_04
+    21300096: boss_Vomit_05
+    21300098: boss_Vomit_06
+    21300100: boss_Vomit_07
+    21300102: boss_Vomit_08
+    21300104: boss_Vomit_09
+    21300106: boss_Vomit_10
+    21300108: boss_Vomit_11
+    21300110: boss_Vomit_12
+    21300112: boss_Vomit_13
     21300114: boss_58
     21300116: boss_59
     21300118: boss_60
@@ -72,14 +72,14 @@ TextureImporter:
     21300130: boss_66
     21300132: boss_67
     21300134: boss_68
-    21300136: boss_69
-    21300138: boss_70
-    21300140: boss_71
-    21300142: boss_72
-    21300144: boss_73
-    21300146: boss_74
-    21300148: boss_75
-    21300150: boss_76
+    21300136: boss_VomitBomb_00
+    21300138: boss_VomitBomb_01
+    21300140: boss_VomitBomb_02
+    21300142: boss_VomitBomb_03
+    21300144: boss_VomitBomb_04
+    21300146: boss_VomitBomb_05
+    21300148: boss_VomitBomb_06
+    21300150: boss_VomitBomb_07
     21300152: boss_77
     21300154: boss_78
     21300156: boss_79
@@ -88,37 +88,37 @@ TextureImporter:
     21300162: boss_82
     21300164: boss_83
     21300166: boss_84
-    21300168: boss_85
-    21300170: boss_86
-    21300172: boss_87
-    21300174: boss_88
-    21300176: boss_89
-    21300178: boss_90
-    21300180: boss_91
-    21300182: boss_92
-    21300184: boss_93
-    21300186: boss_94
-    21300188: boss_95
-    21300190: boss_96
-    21300192: boss_97
+    21300168: boss_Death_00
+    21300170: boss_Death_01
+    21300172: boss_Death_02
+    21300174: boss_Death_03
+    21300176: boss_Death_04
+    21300178: boss_Death_05
+    21300180: boss_Death_06
+    21300182: boss_Death_07
+    21300184: boss_Death_08
+    21300186: boss_Death_09
+    21300188: boss_Death_10
+    21300190: boss_Death_11
+    21300192: boss_Death_12
     21300194: boss_98
     21300196: boss_99
     21300198: boss_100
-    21300200: boss_101
-    21300202: boss_102
-    21300204: boss_103
-    21300206: boss_104
+    21300200: boss_BodyPart1_00
+    21300202: boss_BodyPart1_01
+    21300204: boss_BodyPart1_02
+    21300206: boss_BodyPart1_03
     21300208: boss_105
     21300210: boss_106
     21300212: boss_107
     21300214: boss_108
-    21300216: boss_109
-    21300218: boss_110
-    21300220: boss_111
-    21300222: boss_112
+    21300216: boss_BodyPart2_00
+    21300218: boss_BodyPart2_01
+    21300220: boss_BodyPart2_02
+    21300222: boss_BodyPart2_03
     21300224: boss_113
     21300226: boss_114
-    21300228: boss_115
+    21300228: boss_Tail_00
     21300230: boss_116
     21300232: boss_117
     21300234: boss_118
@@ -222,91 +222,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boss_0
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 711
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_1
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 711
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_2
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 711
-        width: 5
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_3
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 709
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_4
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 711
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_5
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 711
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_6
+      name: boss_Idle_00
       rect:
         serializedVersion: 2
         x: 13
@@ -320,7 +236,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_7
+      name: boss_Idle_01
       rect:
         serializedVersion: 2
         x: 47
@@ -334,7 +250,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_8
+      name: boss_Idle_02
       rect:
         serializedVersion: 2
         x: 82
@@ -348,7 +264,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_9
+      name: boss_Idle_03
       rect:
         serializedVersion: 2
         x: 116
@@ -362,7 +278,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_10
+      name: boss_Idle_04
       rect:
         serializedVersion: 2
         x: 149
@@ -376,7 +292,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_11
+      name: boss_Idle_05
       rect:
         serializedVersion: 2
         x: 183
@@ -390,7 +306,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_12
+      name: boss_Idle_06
       rect:
         serializedVersion: 2
         x: 217
@@ -404,7 +320,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_13
+      name: boss_Idle_07
       rect:
         serializedVersion: 2
         x: 251
@@ -418,119 +334,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_14
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 642
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_15
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 642
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_16
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 642
-        width: 5
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_17
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 640
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_18
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 642
-        width: 10
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_19
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 642
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_20
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 642
-        width: 4
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_21
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 642
-        width: 5
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_22
+      name: boss_Attack_00
       rect:
         serializedVersion: 2
         x: 14
@@ -544,7 +348,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_23
+      name: boss_Attack_01
       rect:
         serializedVersion: 2
         x: 80
@@ -558,7 +362,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_24
+      name: boss_Attack_02
       rect:
         serializedVersion: 2
         x: 146
@@ -572,7 +376,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_25
+      name: boss_Attack_03
       rect:
         serializedVersion: 2
         x: 212
@@ -586,7 +390,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_26
+      name: boss_Attack_04
       rect:
         serializedVersion: 2
         x: 278
@@ -600,7 +404,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_27
+      name: boss_Attack_05
       rect:
         serializedVersion: 2
         x: 344
@@ -614,7 +418,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_28
+      name: boss_Attack_06
       rect:
         serializedVersion: 2
         x: 408
@@ -628,7 +432,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_29
+      name: boss_Attack_07
       rect:
         serializedVersion: 2
         x: 474
@@ -642,13 +446,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_30
+      name: boss_Attack_08
       rect:
         serializedVersion: 2
         x: 540
-        y: 582
-        width: 47
-        height: 46
+        y: 581
+        width: 46
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -656,7 +460,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_32
+      name: boss_Attack_09
       rect:
         serializedVersion: 2
         x: 608
@@ -670,7 +474,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_33
+      name: boss_Attack_10
       rect:
         serializedVersion: 2
         x: 676
@@ -684,7 +488,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_34
+      name: boss_Attack_11
       rect:
         serializedVersion: 2
         x: 742
@@ -698,7 +502,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_35
+      name: boss_Attack_12
       rect:
         serializedVersion: 2
         x: 808
@@ -712,7 +516,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_36
+      name: boss_Attack_13
       rect:
         serializedVersion: 2
         x: 874
@@ -726,105 +530,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_37
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 557
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_38
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 557
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_39
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 557
-        width: 5
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_40
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 555
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_41
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 557
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_42
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 557
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_43
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 557
-        width: 13
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_44
+      name: boss_Vomit_00
       rect:
         serializedVersion: 2
         x: 13
@@ -838,7 +544,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_45
+      name: boss_Vomit_01
       rect:
         serializedVersion: 2
         x: 79
@@ -852,7 +558,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_46
+      name: boss_Vomit_02
       rect:
         serializedVersion: 2
         x: 145
@@ -866,7 +572,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_47
+      name: boss_Vomit_03
       rect:
         serializedVersion: 2
         x: 214
@@ -880,7 +586,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_48
+      name: boss_Vomit_04
       rect:
         serializedVersion: 2
         x: 277
@@ -894,7 +600,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_49
+      name: boss_Vomit_05
       rect:
         serializedVersion: 2
         x: 343
@@ -908,7 +614,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_50
+      name: boss_Vomit_06
       rect:
         serializedVersion: 2
         x: 408
@@ -922,7 +628,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_51
+      name: boss_Vomit_07
       rect:
         serializedVersion: 2
         x: 474
@@ -936,7 +642,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_52
+      name: boss_Vomit_08
       rect:
         serializedVersion: 2
         x: 541
@@ -950,7 +656,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_53
+      name: boss_Vomit_09
       rect:
         serializedVersion: 2
         x: 607
@@ -964,7 +670,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_54
+      name: boss_Vomit_10
       rect:
         serializedVersion: 2
         x: 672
@@ -978,7 +684,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_55
+      name: boss_Vomit_11
       rect:
         serializedVersion: 2
         x: 738
@@ -992,7 +698,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_56
+      name: boss_Vomit_12
       rect:
         serializedVersion: 2
         x: 808
@@ -1006,7 +712,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_57
+      name: boss_Vomit_13
       rect:
         serializedVersion: 2
         x: 874
@@ -1020,161 +726,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_58
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 472
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_59
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 472
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_60
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 472
-        width: 5
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_61
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 470
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_62
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 472
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_63
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 472
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_64
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 472
-        width: 13
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_65
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 472
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_66
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 472
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_67
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 472
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_68
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 472
-        width: 5
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_69
+      name: boss_VomitBomb_00
       rect:
         serializedVersion: 2
         x: 13
@@ -1188,7 +740,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_70
+      name: boss_VomitBomb_01
       rect:
         serializedVersion: 2
         x: 79
@@ -1202,7 +754,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_71
+      name: boss_VomitBomb_02
       rect:
         serializedVersion: 2
         x: 145
@@ -1216,7 +768,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_72
+      name: boss_VomitBomb_03
       rect:
         serializedVersion: 2
         x: 214
@@ -1230,7 +782,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_73
+      name: boss_VomitBomb_04
       rect:
         serializedVersion: 2
         x: 277
@@ -1244,7 +796,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_74
+      name: boss_VomitBomb_05
       rect:
         serializedVersion: 2
         x: 343
@@ -1258,7 +810,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_75
+      name: boss_VomitBomb_06
       rect:
         serializedVersion: 2
         x: 412
@@ -1272,7 +824,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_76
+      name: boss_VomitBomb_07
       rect:
         serializedVersion: 2
         x: 478
@@ -1286,119 +838,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_77
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 387
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_78
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 387
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_79
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 387
-        width: 5
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_80
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 385
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_81
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 387
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_82
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 387
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_83
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 387
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_84
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 387
-        width: 5
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_85
+      name: boss_Death_00
       rect:
         serializedVersion: 2
         x: 14
@@ -1412,7 +852,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_86
+      name: boss_Death_01
       rect:
         serializedVersion: 2
         x: 80
@@ -1426,7 +866,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_87
+      name: boss_Death_02
       rect:
         serializedVersion: 2
         x: 148
@@ -1440,7 +880,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_88
+      name: boss_Death_03
       rect:
         serializedVersion: 2
         x: 211
@@ -1454,7 +894,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_89
+      name: boss_Death_04
       rect:
         serializedVersion: 2
         x: 276
@@ -1468,7 +908,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_90
+      name: boss_Death_05
       rect:
         serializedVersion: 2
         x: 339
@@ -1482,7 +922,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_91
+      name: boss_Death_06
       rect:
         serializedVersion: 2
         x: 405
@@ -1496,7 +936,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_92
+      name: boss_Death_07
       rect:
         serializedVersion: 2
         x: 471
@@ -1510,7 +950,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_93
+      name: boss_Death_08
       rect:
         serializedVersion: 2
         x: 538
@@ -1524,7 +964,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_94
+      name: boss_Death_09
       rect:
         serializedVersion: 2
         x: 609
@@ -1538,7 +978,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_95
+      name: boss_Death_10
       rect:
         serializedVersion: 2
         x: 676
@@ -1552,7 +992,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_96
+      name: boss_Death_11
       rect:
         serializedVersion: 2
         x: 742
@@ -1566,7 +1006,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_97
+      name: boss_Death_12
       rect:
         serializedVersion: 2
         x: 808
@@ -1580,49 +1020,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_98
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 318
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_99
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 318
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_100
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 318
-        width: 13
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_101
+      name: boss_BodyPart1_00
       rect:
         serializedVersion: 2
         x: 8
@@ -1636,7 +1034,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_102
+      name: boss_BodyPart1_01
       rect:
         serializedVersion: 2
         x: 42
@@ -1650,7 +1048,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_103
+      name: boss_BodyPart1_02
       rect:
         serializedVersion: 2
         x: 76
@@ -1664,7 +1062,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_104
+      name: boss_BodyPart1_03
       rect:
         serializedVersion: 2
         x: 110
@@ -1678,63 +1076,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_105
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 265
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_106
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 265
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_107
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 265
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_108
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 265
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_109
+      name: boss_BodyPart2_00
       rect:
         serializedVersion: 2
         x: 8
@@ -1748,7 +1090,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_110
+      name: boss_BodyPart2_01
       rect:
         serializedVersion: 2
         x: 42
@@ -1762,7 +1104,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_111
+      name: boss_BodyPart2_02
       rect:
         serializedVersion: 2
         x: 76
@@ -1776,7 +1118,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_112
+      name: boss_BodyPart2_03
       rect:
         serializedVersion: 2
         x: 110
@@ -1790,279 +1132,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boss_113
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 212
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_114
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 212
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_115
+      name: boss_Tail_00
       rect:
         serializedVersion: 2
         x: 10
         y: 184
         width: 21
         height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_116
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 159
-        width: 10
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_117
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 159
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_118
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 157
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_119
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 107
-        width: 23
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_120
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 124
-        width: 22
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_121
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 125
-        width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_122
-      rect:
-        serializedVersion: 2
-        x: 142
-        y: 125
-        width: 21
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_123
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 124
-        width: 22
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_124
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 125
-        width: 21
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_125
-      rect:
-        serializedVersion: 2
-        x: 244
-        y: 126
-        width: 21
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_126
-      rect:
-        serializedVersion: 2
-        x: 278
-        y: 125
-        width: 21
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_127
-      rect:
-        serializedVersion: 2
-        x: 312
-        y: 126
-        width: 21
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_128
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 90
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_129
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 90
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_130
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 90
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_131
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 90
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boss_132
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 4
-        width: 112
-        height: 73
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
