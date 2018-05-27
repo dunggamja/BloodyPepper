@@ -22,7 +22,6 @@ public class DialogueScript : StoryScript
 
     private bool isCompleted = false;
     private float textPerSeconds = 5f;
-    private Coroutine dialogueCoroutine = null;
     private Text labelDialogue = null;
 
 
@@ -38,16 +37,10 @@ public class DialogueScript : StoryScript
         if (labelDialogue) labelDialogue.text = string.Empty;
     }
 
-    public override void PlayStart()
+    protected override IEnumerator RunScript()
     {
-        dialogueCoroutine = GameMain.Instance.StartCoroutine(ShowDialogueSmoothly());
-    }
-
-    private IEnumerator ShowDialogueSmoothly()
-    {
-        while(false == IsCompleted)
+        while (false == IsCompleted)
         {
-            
             AccumulatedTime += Time.deltaTime;
             int showTextLength = (int)(AccumulatedTime * textPerSeconds);
 
@@ -55,9 +48,6 @@ public class DialogueScript : StoryScript
             IsCompleted = CheckComplete();
             yield return null;
         }
-
-        dialogueCoroutine = null;
-        StoryManager.Instance.UpdatePlayingSequence();
     }
 
     private bool CheckComplete()

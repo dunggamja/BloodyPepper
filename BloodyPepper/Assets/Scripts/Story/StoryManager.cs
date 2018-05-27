@@ -5,7 +5,7 @@ using UnityEngine;
 
 
 //트리거 클래스.
-public struct StoryTrigger
+public class StoryTrigger 
 {
     public enum SEQUANTIAL_TYPE
     {
@@ -20,24 +20,6 @@ public struct StoryTrigger
     {
         sequaltialType = type;
         triggerKeys = triggers;
-    }
-
-
-    public bool IsFlaged(Dictionary<string, bool> flags)
-    {
-        if (null == triggerKeys)
-            return true;
-
-        foreach(var key in triggerKeys)
-        {
-            if (flags.ContainsKey(key) == false)
-                return false;
-
-            if (flags[key] == false)
-                return false;
-        }
-
-        return true;
     }
 }
 
@@ -60,11 +42,15 @@ public abstract class StoryScript
     public bool IsCompleted { get; protected set; }             // 재생이 완료되었는가?
 
 
-    // 스크립트를 재생한다. 
-    //  : 재생도중에 트리거들을 반환한다. 
-    //  : trigger
-    public abstract void PlayStart();
+    // 스크립트를 재생한다. 재생 완료시 콜백함수 호출.
+    // 코루틴 형태로 되있음. 
+    public IEnumerator PlayStart()
+    {
+        yield return RunScript();
+        StoryManager.Instance.UpdatePlayingSequence();
+    }
 
+    protected abstract IEnumerator RunScript();
 }
 
 
@@ -87,12 +73,7 @@ public class StorySequence
     }
 
     //시퀸스 넘버.
-    public Int32 SequenceNum { get; private set; }       
-
-    //트리거 항목들.
-    //시퀸스가 트리거 항목에 대한 정보를 들고 있는 것이 좋을 것 같다. 
-    //각 스크립트가 실행되면서 trigger에 대한 요청을 줄 것이다.
-    private Dictionary<string, bool> triggerFlags = new Dictionary<string, bool>();   
+    public Int32 SequenceNum { get; private set; }         
 
 
     //대기중인 스토리 이벤트는 순차적으로 처리가 될것이다. 큐형태로 관리 된다.
@@ -103,19 +84,8 @@ public class StorySequence
 
     //현재 재생중인 스토리 이벤트 항목들을 관리한다. 
     //재생이 완료된 항목들은 제거된다.
-    private List<StoryScript> scriptsInPlaying = new List<StoryScript>();    
-   
-    public void SetTrigger(string[] triggers)
-    {
-        if(null != triggers)
-        {
-            foreach(var key in triggers)
-            {
-                if (string.IsNullOrEmpty(key) == false)
-                    triggerFlags[key] = true;
-            }
-        }
-    }
+    private List<StoryScript> scriptsInPlaying = new List<StoryScript>();       
+    
 
     public void UpdateSequence()
     {
@@ -148,7 +118,7 @@ public class StorySequence
             if (StoryTrigger.SEQUANTIAL_TYPE.Manually == triggerInfo.sequaltialType)
             {
                 //트리거 목록 검사.
-                return triggerInfo.IsFlaged(triggerFlags);
+                return StoryManager.Instance.CheckTriggerConditions(triggerInfo);
             }
             else if (StoryTrigger.SEQUANTIAL_TYPE.Auto == triggerInfo.sequaltialType)
             {
@@ -169,7 +139,8 @@ public class StorySequence
                 var playScript = scriptsInWaiting.Dequeue();
                 if(null != playScript)
                 {
-                    playScript.PlayStart();
+                    //각 스크립트들은 코루틴으로 실행된다. 
+                    GameMain.Instance.StartCoroutine(playScript.PlayStart());
                     scriptsInPlaying.Add(playScript);
                 }
             }
@@ -239,22 +210,48 @@ public class StoryManager
     // 현재 실행 (or 실행 대기) 중인 시퀸스 큐. 
     private Queue<StorySequence>                playingSequenceQueue = new Queue<StorySequence>();
 
-#endregion
+    #endregion
 
 
-    //현재 실행중인 시퀸스에 트리거 변경사항을 적용한다.!!
-    public void SetTriggers(string[] triggers)
+#region TriggerContainer & Methods
+    //스토리 매니저가 트리거 항목에 대한 정보를 들고 있는 것이 좋을 것 같다. 
+    //각 스크립트가 실행되면서 trigger에 대한 요청을 줄 것이다.
+    private Dictionary<string, bool> triggerFlags = new Dictionary<string, bool>();
+
+    //Trigger 플래그 ON!
+    public void SetTrigger(string[] triggers)
     {
-        if (0 < playingSequenceQueue.Count)
+        if (null != triggers)
         {
-            var currentSequence = playingSequenceQueue.Peek();
-            if(null != currentSequence)
+            foreach (var key in triggers)
             {
-                currentSequence.SetTrigger(triggers);
+                if (string.IsNullOrEmpty(key) == false)
+                    triggerFlags[key] = true;
             }
         }
     }
 
+    //트리거 플래그 체크
+    public bool CheckTriggerConditions(StoryTrigger triggerInfo)
+    {
+        if (null == triggerInfo)
+            return true;
+
+        if (null == triggerInfo.triggerKeys)
+            return true;
+
+        foreach(string key in triggerInfo.triggerKeys)
+        {
+            if (false == triggerFlags.ContainsKey(key) 
+            ||  false == triggerFlags[key])
+                return false;
+        }
+
+        return true;
+    }
+    #endregion
+
+#region Sequence methods
     //현재 실행중인 시퀸스 변경사항 적용
     public void UpdatePlayingSequence()
     {
@@ -268,7 +265,7 @@ public class StoryManager
         }
     }
 
-
+    //시퀸스 로드.
     public void AddSequenceInfo(StorySequence sequence)
     {
         if (null == sequence)
@@ -278,7 +275,7 @@ public class StoryManager
     }
 
     // 로드된 시퀸스를 실행(or 실행대기) 상태로 만든다. 
-    public void EnqueuePlayingSequenceFromLoadedSequences(int sequenceNum)
+    public void EnqueueSequenceFromLoadedToPlaying(int sequenceNum)
     {
         if(sequenceRepository.ContainsKey(sequenceNum))
         {
@@ -305,6 +302,7 @@ public class StoryManager
             }
         }
     }
+#endregion
 
 
 #region clearMethods
@@ -350,7 +348,7 @@ public static class StoryTest
            }
            ));
 
-        StoryManager.Instance.EnqueuePlayingSequenceFromLoadedSequences(2);
-        StoryManager.Instance.EnqueuePlayingSequenceFromLoadedSequences(1);
+        StoryManager.Instance.EnqueueSequenceFromLoadedToPlaying(2);
+        StoryManager.Instance.EnqueueSequenceFromLoadedToPlaying(1);
     }
 }
