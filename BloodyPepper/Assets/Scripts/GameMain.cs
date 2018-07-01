@@ -20,7 +20,8 @@ public class GameMain : MonoBehaviour
 
 
 
-    public StageManager StageMgr { get; private set; }
+    public StageManager         StageMgr  { get; private set; }
+    //public Story.StoryManager   StoryMgr  { get; private set; }
 
 
     public void Awake()
@@ -37,8 +38,12 @@ public class GameMain : MonoBehaviour
         if (null == StageMgr)
             StageMgr = new StageManager();
 
+        //if (null == StoryMgr)
+        //    StoryMgr = new Story.StoryManager();
+
 
         scaledTimeUpdate += StageMgr.Update;
+        //unscaledTimeUpdate += StoryMgr.Update;
     }
 
 

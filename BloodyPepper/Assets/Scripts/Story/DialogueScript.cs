@@ -5,73 +5,73 @@ using UnityEngine;
 using System.Text;
 using UnityEngine.UI;
 
-//대사 스크립트 
-public class DialogueScript : StoryScript
+namespace Story
 {
-    public enum PORTRAIT_TYPE
+    //대사 스크립트 
+    public class DialogueScript : StoryScript
     {
-            NONE_PORTRAIT
-        ,   ONE_PORTRAIT
-        ,   TWO_PORTRAIT
-    };
 
-    private PORTRAIT_TYPE portraitType = PORTRAIT_TYPE.NONE_PORTRAIT;
+        private PortraitInfo    portraitInfo = null;
+        private string          originalMessage = string.Empty;
+        private StringBuilder   showingDialogue = new StringBuilder();
 
-    private string dialogue = string.Empty;
-    private StringBuilder showingDialogue = new StringBuilder();
-
-    private bool isCompleted = false;
-    private float textPerSeconds = 5f;
-    private Text labelDialogue = null;
+        private float textPerSeconds = 5f;
 
 
-
-    public DialogueScript(StoryTrigger triggerInfo, string dialogueText, Text label) 
-        : base(triggerInfo)
-    {
-        dialogue = dialogueText;
-        showingDialogue.Length = 0;
-        showingDialogue.Capacity = dialogue.Length;
-        labelDialogue = label;
-
-        if (labelDialogue) labelDialogue.text = string.Empty;
-    }
-
-    protected override IEnumerator RunScript()
-    {
-        while (false == IsCompleted)
+        static public DialogueScript Create_DialogueEnd()
         {
-            AccumulatedTime += Time.deltaTime;
-            int showTextLength = (int)(AccumulatedTime * textPerSeconds);
-
-            SetDialogueTextLength(showTextLength);
-            IsCompleted = CheckComplete();
-            yield return null;
+            // 빈 문자열이 올경우 대화창을 닫는 거라고 생각하자. 
+            // 대화창을 자동으로 닫기엔 판단 기준이 명확하지 않은 것 같다... 
+            return new DialogueScript(string.Empty);
         }
-    }
 
-    private bool CheckComplete()
-    {
-        if (showingDialogue.Length < dialogue.Length)
-            return false;
+        public DialogueScript(string message)
+            : base(TriggerType.Auto, null)
+        {
+            originalMessage = message;
+            showingDialogue.Length = 0;
+            showingDialogue.Capacity = originalMessage.Length;
+        }
 
-        return true;
-    }
+        public DialogueScript(PortraitPosition portrait, CharacterType character, EmotionType emotion, string message)
+            : this(message)
+        {
+            portraitInfo = new PortraitInfo(portrait, character, emotion);            
+        }
 
-    private void SetDialogueTextLength(int length)
-    {
-        if (dialogue.Length <= showingDialogue.Length)
-            return;
 
-        length = Math.Min(dialogue.Length, length);
+        public override void NotifyCommand(StoryCommand command)
+        {
+            
+        }
 
-        if (length <= showingDialogue.Length)
-            return;
+        protected override IEnumerator RunScript()
+        {
+            var listActions = DialogueUI.MakeUIActionsByScript(this);
 
-        int subStringStart = showingDialogue.Length;
-        int subStringLength = length - subStringStart;
+            for(int i = 0; i < listActions.Count; ++i)
+            {
+                yield return listActions[i];
+            }
 
-        showingDialogue.Append(dialogue.Substring(subStringStart, subStringLength));
-        if (labelDialogue) labelDialogue.text = showingDialogue.ToString();
+            IsCompleted = true;
+        }
+       
+        private void SetDialogueTextLength(int length)
+        {
+            if (originalMessage.Length <= showingDialogue.Length)
+                return;
+
+            length = Math.Min(originalMessage.Length, length);
+
+            if (length <= showingDialogue.Length)
+                return;
+
+            int subStringStart = showingDialogue.Length;
+            int subStringLength = length - subStringStart;
+
+            showingDialogue.Append(originalMessage.Substring(subStringStart, subStringLength));
+            //if (labelDialogue) labelDialogue.text = showingDialogue.ToString();
+        }
     }
 }
