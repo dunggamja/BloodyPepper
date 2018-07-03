@@ -47,11 +47,15 @@ namespace Story
 
         protected override IEnumerator RunScript()
         {
-            var listActions = DialogueUI.MakeUIActionsByScript(this);
-
-            for(int i = 0; i < listActions.Count; ++i)
+            var dialogueUI = UIManager.Instance.GetUI<DialogueUI>();
+            if (null != dialogueUI)
             {
-                yield return listActions[i];
+                var listActions = dialogueUI.MakeUICommandByScript(this);
+
+                for (int i = 0; i < listActions.Count; ++i)
+                {
+                    yield return dialogueUI.PlayUICommand(listActions[i]);
+                }
             }
 
             IsCompleted = true;

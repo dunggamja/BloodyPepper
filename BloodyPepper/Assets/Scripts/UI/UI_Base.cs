@@ -27,6 +27,4 @@ public class UI_Base : MonoBehaviour
         GameObject.Destroy(gameObject);
     }
 
-    
-
 }

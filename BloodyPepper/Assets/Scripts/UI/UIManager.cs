@@ -48,7 +48,8 @@ public class UIManager : MonoBehaviour
             GameObject newUI = GameObject.Instantiate<GameObject>(oriUI, transform);
             T openUICom = newUI.GetComponent<T>();
             if (null == openUICom)
-                openUICom = newUI.AddComponent<T>();
+                return;
+           
 
             openUICom.transform.SetAsLastSibling();
             listOpenUI.Add(openUICom);

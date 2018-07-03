@@ -79,13 +79,8 @@ public class DialogueUI_Command
         Value3 = value3;
         Value4 = value4;
     }
-
-    //static public DialogueUI_Command CreateCommand(uint cmd, uint targetValue
-    //    , int value1 = 0, int value2 = 0, int value3 = 0, int value4 = 0)
-    //{
-    //    return new DialogueUI_Command(cmd, targetValue, value1, value2, value3, value4);
-    //}
 }
+
 
 
 public class DialogueUI : UI_Base
@@ -223,14 +218,6 @@ public class DialogueUI : UI_Base
         }
     }
 
-
-    static public IEnumerator MakeUIActionByCommand(DialogueUI_Command[] dialogueCommand)
-    {
-        yield return null;
-    }
-
-
-
     //현재 대화창 UI 상태에 따라서 UI 행동들을 만들어 냅니다. 
     // 현재 UI 창이 열려있는가 ? 
     //     : 열려있지 않다면 UI창을 등장시킨다. (초상화와 이름도 같이 등장시킨다.)
@@ -242,34 +229,25 @@ public class DialogueUI : UI_Base
     //
     // 재생이 끝났는데. 다음 대화창에 표시할 내용이 없다면? 대화창을 닫아줘야 하는데... 
     //   : 그 판단을 자동으로 하긴 힘들다.. 대화창 닫기는 따로 처리한다...
-    static public List<IEnumerator> MakeUIActionsByScript(Story.DialogueScript dialogueScript)
+    public List<DialogueUI_Command[]> MakeUICommandByScript(Story.DialogueScript dialogueScript)
     {
-        List<IEnumerator> listActions = new List<IEnumerator>();
+        List<DialogueUI_Command[]> listActions = new List<DialogueUI_Command[]>();
 
-        var ui = UIManager.Instance.GetUI<DialogueUI>();
-        if(false == ui.Initialized)
+        if(false == Initialized)
         {
-            listActions.Add(MakeUIActionByCommand(
-                new DialogueUI_Command[]
+            //UI가 현재 보이지 않는 상태라면 등장!! 
+            listActions.Add(new DialogueUI_Command[]
                 {
-                new DialogueUI_Command(DialogueUI_Command.COMMAND_SHOW, DialogueUI_Command.TARGET_ALL) 
-                })
-                );
+                    new DialogueUI_Command(DialogueUI_Command.COMMAND_SHOW, DialogueUI_Command.TARGET_ALL) 
+                });
         }
-
-
-
 
         return listActions;
     }
 
-
-
-    private bool IsDialogueUIOpen()
+    public IEnumerator PlayUICommand(DialogueUI_Command[] commands)
     {
-        var ui = UIManager.Instance.GetUI<DialogueUI>();
-
-        //UI가 열린적이 있는지 체크한다. 
-        return (null != ui && ui.Initialized);
+        yield return null;
     }
+
 }
