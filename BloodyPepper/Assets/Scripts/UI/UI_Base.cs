@@ -14,11 +14,15 @@ public class UI_Base : MonoBehaviour
             return;
 
         Initialized = true;
+        transform.localPosition = UIManager.Instance.UI_POS_HIDE;
     }
 
     public virtual void Open()
     {
         Initialize();
+
+        transform.SetAsLastSibling();
+        transform.localPosition = UIManager.Instance.UI_POS_SHOW;
         gameObject.SetActive(true);
     }
 
@@ -26,5 +30,8 @@ public class UI_Base : MonoBehaviour
     {
         GameObject.Destroy(gameObject);
     }
+
+    public bool IsVisible { get { return Mathf.Abs(transform.localPosition.z) < Mathf.Abs(UIManager.Instance.UI_POS_HIDE.z); } }
+         
 
 }

@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
+    public const    float   POS_Z_HIDE  = -40000f;
+    public readonly Vector3 UI_POS_HIDE = new Vector3(0f, 0f, POS_Z_HIDE);
+    public readonly Vector3 UI_POS_SHOW = Vector3.zero;
+    
+
     public static UIManager Instance { get; private set; }
 
 	// Use this for initialization
@@ -14,49 +19,38 @@ public class UIManager : MonoBehaviour
 	}
 
 
-    private List<UI_Base> listOpenUI = new List<UI_Base>(16);
+    private List<UI_Base> listOpenUI = new List<UI_Base>(32);
 
 
-    public void OpenUI<T>() where T : UI_Base
+    public T OpenUI<T>() where T : UI_Base
     {
-        var openUI = listOpenUI.Find((UI_Base item) => 
+        T openUI = FindUI<T>();
+
+        //새로 생성.
+        if(null == openUI)
         {
-            if(item.GetType() == typeof(T))
-                return true;
-            return false;
-        });
-
-        //이미 존재할 경우.
-        if (null != openUI)
-        {
-            //리스트의 맨뒤로 위치 변경
-            listOpenUI.Remove(openUI);
-            listOpenUI.Add(openUI);
-
-            //UI 목록중 가장 앞에 표시되도록 수정.
-            openUI.gameObject.transform.SetAsLastSibling();
-
-            openUI.Open();
-            return;
+            openUI = CreateUI<T>();
         }
 
+        if (null != openUI)
+            openUI.Open();            
+
+        return openUI;
+    }
+
+    private T LoadUIPrefab<T>() where T : UI_Base
+    {
+        T openUI = null;
         string typeName = typeof(T).ToString();
         string path = string.Format("Prefabs/UI/{0}", typeName);
         GameObject oriUI = Resources.Load<GameObject>(path);
         if (null != oriUI)
         {
             GameObject newUI = GameObject.Instantiate<GameObject>(oriUI, transform);
-            T openUICom = newUI.GetComponent<T>();
-            if (null == openUICom)
-                return;
-           
-
-            openUICom.transform.SetAsLastSibling();
-            listOpenUI.Add(openUICom);
-
-            openUICom.Initialize();
-            openUICom.Open();
+            openUI = newUI.GetComponent<T>();            
         }
+
+        return openUI;
     }
 
 
@@ -77,7 +71,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public T GetUI<T>() where T : UI_Base
+    public T FindUI<T>() where T : UI_Base
     {
         T openUI = listOpenUI.Find((UI_Base item) =>
         {
@@ -88,6 +82,25 @@ public class UIManager : MonoBehaviour
 
         return openUI;
     }
+
+    public T CreateUI<T>() where T : UI_Base
+    {
+        T openUI = FindUI<T>();
+        if (null != openUI)
+            return openUI;
+
+        
+        openUI = LoadUIPrefab<T>();
+        if (null != openUI)
+        {
+            listOpenUI.Add(openUI);
+            openUI.Initialize();
+        }
+
+        return openUI;
+    }
+
+
 
     public void CloseAllUI()
     {

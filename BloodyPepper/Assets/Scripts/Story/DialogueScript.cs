@@ -47,35 +47,37 @@ namespace Story
 
         protected override IEnumerator RunScript()
         {
-            var dialogueUI = UIManager.Instance.GetUI<DialogueUI>();
+            var dialogueUI = UIManager.Instance.FindUI<DialogueUI>();
             if (null != dialogueUI)
             {
-                var listActions = dialogueUI.MakeUICommandByScript(this);
+                var listActions = dialogueUI.MakeDUCommands(this);
 
                 for (int i = 0; i < listActions.Count; ++i)
                 {
-                    yield return dialogueUI.PlayUICommand(listActions[i]);
+                    yield return dialogueUI.PlayDUCommands(listActions[i]);
                 }
             }
 
             IsCompleted = true;
         }
        
-        private void SetDialogueTextLength(int length)
+        private string GetDialogueTextLength(int length)
         {
-            if (originalMessage.Length <= showingDialogue.Length)
-                return;
-
             length = Math.Min(originalMessage.Length, length);
+            //if (originalMessage.Length <= showingDialogue.Length)
+            //    return;
+            //length = Math.Min(originalMessage.Length, length);
 
-            if (length <= showingDialogue.Length)
-                return;
+            //if (length <= showingDialogue.Length)
+            //    return;
 
-            int subStringStart = showingDialogue.Length;
-            int subStringLength = length - subStringStart;
+            //int subStringStart = showingDialogue.Length;
+            //int subStringLength = length - subStringStart;
 
-            showingDialogue.Append(originalMessage.Substring(subStringStart, subStringLength));
+            //showingDialogue.Append(originalMessage.Substring(subStringStart, subStringLength));
             //if (labelDialogue) labelDialogue.text = showingDialogue.ToString();
+
+            return originalMessage.Substring(0, length);
         }
     }
 }
